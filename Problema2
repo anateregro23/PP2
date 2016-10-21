@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema2;
+
+/**
+ *
+ * @author ACER-HP
+ * 1 mts = 1250/381 ft
+ * 1 mts = 1250/1143 yds
+ * 1 mts = 125/201168 mls
+ */
+public class Problema2 {
+    /**
+     * Este programa consiste en convertis de metros a yardas.
+     * @param mts es double y procesa lo mas importante.
+     */
+    public static void Ft (double mts) {
+        double ft = mts * 1250 / 381; /*Empezamos dando valor a ft para poder
+        procesar la conversion de metros a pies.*/
+        System.out.println("En " + mts + " mts hay " + ft + " ft."); /*comentario
+        sobre la conversion de metros a pies.*/
+    }
+    /**
+     * Metros a pies.
+     * @param mts es double y procesa lo mas importante.
+     */
+    public static void Yd (double mts) {
+        double yds = mts * 1250 / 1143; /*Empezamos dando valor a yds para poder
+        procesar la conversion de metros a yardas.*/
+        System.out.println("En " + mts + " mts hay " + yds + " yds."); /* comentario
+        sobre la conversion de metros a yardas.*/
+    }
+    /**
+     * Metros a millas.
+     * @param mts es double y procesa lo mas importante.
+     */
+    public static void Mls (double mts) {
+        double mls = mts * 125 / 201168; /*Empezamos dando valor a mls para poder
+        procesar la conversion de metros a millas.*/
+        System.out.println("En " + mts + " mts hay " + mls + " mls."); /*comentario
+        sobre la conversion de metros a millas.*/
+    }
+}
