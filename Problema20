@@ -1,0 +1,54 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema20;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema20 {
+    /**
+     * 
+     * Este método calcula la conversión de km a ms.
+     * @param a es integer y tiene informacion primordial.
+     * @param b es integer y tiene informacion primordial.
+     */
+    public static void MA (int a, int b) {
+        if (MAPS (a, b)) { 
+            System.out.println("Los numeros " + a + " y " + b + " SI son amigos.");
+        } else { 
+            System.out.println("Los numeros " + a + " y " + b + " NO son amigos.");
+        } 
+    }
+    /**
+     * @param a es integer y tiene informacion primordial.
+     * @param b es integer y tiene informacion primordial.
+     * @return 
+     */
+    public static boolean MAPS (int a, int b) {
+        int c = 0; 
+        for (int d = 1; d < a; d++) { 
+            if ((a % d) == 0){ 
+                c = c + d; 
+            } 
+        } 
+        if (c == b) { 
+            c = 0; 
+            for (int d = 1; d < b; d++) { 
+                if((b % d) == 0){ 
+                    c = c + d; 
+                } 
+            } 
+            if (c == a) { 
+                return true;
+            } else { 
+                return false;
+            } 
+        } else { 
+            return false;
+        } 
+    }
+}
