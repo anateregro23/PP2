@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema1;
+
+/**
+ *
+ * @author ACER-HP
+ * Se divide con 4.
+ * Al terminar en 00 se demuestra que se puede dividir entre 4 centenas.
+ * m: Es divisible entre 4
+ * d: Es divisible entre 100
+ * c: Es divisible entre 400
+ * g ∧ ( ¬ q ∨ r ) 
+ */
+public class problema1 {
+    /**
+     * @param a es integer y tiene informacion primordial.
+     */
+    public static void Bisiesto (int a) {
+        int m = a % 4; 
+        int d = a % 100; 
+        int c = a % 400; 
+        if(m == 0 && (d != 0 || c == 0)) { 
+            System.out.println("El ano " + a + " es bisiesto."); 
+        } else { 
+            System.out.println("El ano " + a + " NO es bisiesto."); 
+        } 
+    }
+}
