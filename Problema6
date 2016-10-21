@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema6;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema6 {
+    /**
+     * @param x es integer y tiene informacion primordial.
+     * @param y es integer y tiene informacion primordial. 
+     */
+    public static void Problema6 (int x, int y){
+        int a, b, c, d, e; //Asignamos variables.
+        if (x > 40) { //Si se trabajaron mas de 40 horas.
+            if (x > 48) { //Mas  de 48 horas
+                b = 40 * y; //cuarenta horas por el salario.
+                c = 2 * (8 * y); /*ocho horas por el salario por dos.*/
+                e = x - 48; /*horas despues de 48.*/
+                d = 3 * (e * y); /*horas extras.*/
+                a = b + c + d; /*sumatoria de todos los salarios con horas extra.*/
+            } else { /* entre 40 y 48 horas. */
+                b = 40 * y; //Horas por salario.
+                e = x - 40; /*Horas despues de las 40.*/
+                c = 2 * (e * y); /*Horas extra.*/
+                a = b + c; /*Sumatoria.*/
+            } //Termino de la condicion.
+        } else { // menos de 40 horas.
+            a = x * y; /*salario total.*/
+        } //termino de la condicion.
+        System.out.println("Fueron trabajadas " + x + " horas resultando en su salario que data de $" + a);
+        //Resultado final
+    }
+}
