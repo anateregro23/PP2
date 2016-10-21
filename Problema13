@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema13;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema13 {
+    /**
+     * @param a es integer en arreglo y tiene informacion primordial..
+     */
+    public static void Probtrresce (int a []) {
+        double b = 0, c = 0, d = 0; 
+        for (int e = 0; e < 30; e++) { 
+            b = b + a[e]; 
+        } 
+        double p = (double) b / 30; 
+        for (int e = 0; e < 30; e++) { 
+            if (a[e] > p) { 
+                d++; 
+            } else if (a[e] < p) {  
+                c++; 
+            } 
+        } 
+        System.out.println("El promedio es: " + p);
+        System.out.println(d + " Arriba del promedio.");
+        System.out.println(c + " Abajo del promedio.");
+        System.out.println("Numeros introducidos: ");
+        for (int e = 0; e < 30; e++) { 
+            System.out.print("[" + a[e] + "] "); 
+        } 
+        System.out.println(""); 
+    }
+}
