@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema9;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema9 {
+    /**
+     * @param a es integer y contiene informacion primordial.
+     */
+    public static void cuatro (int a) {
+        int b, d, f, e; //Asignamos valores.
+        if (a <= 9999){ //Menor o igual a 9999.
+            e = a / 1000; //Unides elevado a milesimas.
+            f = (a - e * 1000) / 100; /*unidades a centena.*/
+            d = (a - e * 1000 - f * 100) / 10; /*unidades a decena.*/
+            b = a - e * 1000 - f * 100 - d * 10; /*Unidades en un numero grande.*/
+            e = e * 1000; //unidades a milesimas.
+            f = f * 100; //unidades a centenas.
+            d = d * 10; //unidades a centenas.
+            if (e == 0) { //igual a cero.
+                if(f == 0) { //igual a cero.
+                    if(d == 0) { //igual a cero.
+                        System.out.println(a + " = " + b); /*unidades.*/
+                    } else { //En caso de que la decena no sea cero.
+                        System.out.println(a + " = " + d + " + " + b); /*decenas
+                            y unidades.*/
+                    } //termino de la condicion.
+                } else { //No es cero.
+                    System.out.println(a + " = " + f + " + " + d + " + " + b);
+                        /*Separacion.*/
+                } //Termino de la condicion.
+            } else { //No es cero.
+                System.out.println(a + " = " + e + " + " + f + " + " + d + " + " + b);
+                    /*Separacion.*/
+            } //Termino de la condicion.
+        } else { //mayor a 9999.
+            System.out.println("Lo siento el número que tecleo excede de las 4 cifras.");
+        } //Fin.
+    }
+}
