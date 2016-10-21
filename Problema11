@@ -1,0 +1,96 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema11;
+
+/**
+ *
+ * @author ACER-HP
+ * I = 1
+ * V = 5
+ * X = 10
+ * L = 50
+ * C = 100
+ * D = 500
+ * M = 1000
+ */
+public class Problema11 {
+    /**
+     * @param a es integer y contiene informacion primordial.
+     */
+    public static void prob (int a) {
+        if (a <= 3999) { 
+            int b, f, g, h; 
+            h = a / 1000; 
+            g = (a - h * 1000) / 100; 
+            f = (a - h * 1000 - g * 100) / 10; 
+            b = a - h * 1000 - g * 100 - f * 10; 
+            if (h > 0) { 
+                for (int i = 0; i < h; i++) { 
+                    System.out.print("M"); 
+            } 
+            System.out.print(" ");
+            if (g > 0) { 
+                if(g < 4) { 
+                    for (int i = 0; i < g; i++) { 
+                        System.out.print("C"); 
+                } else if (g == 4) { 
+                    System.out.print("CD"); 
+                } else if (g == 5) { 
+                    System.out.print("D"); 
+                } else if (g > 5 && g < 9) { 
+                    System.out.print("D"); 
+                    for (int i = 5; i < g; i++){ 
+                        System.out.print("C"); 
+                } else if (g == 9) { 
+                    System.out.print("CM"); 
+                } 
+            } 
+            System.out.print(" "); 
+            if (f > 0) { 
+                if (f < 4) { 
+                    for (int i = 0; i < f; i++) { 
+                        System.out.print("X"); 
+                    } 
+                } else if (f == 4) { 
+                    System.out.print("XL");
+                } else if (f == 5) { 
+                    System.out.print("L"); 
+                } else if (f > 5 && f < 9) { 
+                    System.out.print("L"); 
+                    for (int i = 5; i < f; i++){ 
+                        System.out.print("X"); 
+                    } 
+                } else if (f == 9) { 
+                    System.out.print("XC"); 
+                } 
+            } 
+            System.out.print(" "); 
+            if (b > 0) { 
+                if (b < 4) { 
+                    for (int i = 0; i < b; i++) { 
+                        System.out.print("I"); 
+                    } 
+                } else if (b == 4) { 
+                    System.out.print("IV"); 
+                } else if (b == 5) { 
+                    System.out.print("V"); 
+                } else if (b > 5 && b < 9) { 
+                    System.out.print("V"); 
+                    for (int i = 5; i < b; i++){ 
+                        System.out.print("I"); 
+                    } 
+                } else if (b == 9) { 
+                    System.out.print("IX"); 
+                } 
+            } 
+            System.out.print(" "); 
+        } else { 
+            System.out.println("Lo siento el número que tecleo se excede del rango.");
+        } 
+        System.out.println("");
+    }
+            
+            
