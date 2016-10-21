@@ -1,0 +1,53 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema15;
+
+import java.util.Random;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema15 {
+    /**
+     */
+    public static void probquin(){
+        int a[][] = new int[10][10]; 
+        int b[] = new int[10]; 
+        Random c = new Random(); 
+        for (int d = 0; d < 10; d++) { 
+            int e = 0; 
+            for (int f = 0; f < 10; f++) { 
+                a[d][f] = c.nextInt(11); 
+                e = e + a[d][f]; 
+                System.out.print("[" + a[d][f] + "]"); 
+                if (a[d][f] < 10) { 
+                    System.out.print(" ");
+                } 
+                b[f] = b[f] + a[d][f]; 
+            } 
+            System.out.println(" = " + e); 
+        } 
+        for (int f = 0; f < 10; f++) { 
+            System.out.print(" || "); 
+        } 
+        System.out.println(""); 
+        for (int f = 0; f < 10; f++) { 
+            System.out.print("[" + b[f] + "]"); 
+        } 
+        
+        for (int f = 0; f < 7; f++) { 
+            for (int j = 0; j < 7; j++) { 
+                if (f == j) { 
+                    a[f][j] = 1; 
+                } else { 
+                    a[f][j] = 0; 
+                } 
+                System.out.print("[" + a[f][j] + "]"); 
+            } 
+            System.out.println("");
+        } 
+}
