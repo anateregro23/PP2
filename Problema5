@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema5;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema5 {
+    /**
+     * Calcular si son numeros primos.
+     * @param pri es integer y tiene informacion primordial.
+     */
+    public static void Primos (int pri) {
+        int d = 0; //integrar una variable. 
+        for (int a = 1; a <= pri; a++) { /*La variable ejecutara un ciclo para 
+            obtener residuos.*/
+            if ((pri % a) == 0) { /*Si no hay residuos que siga haciendo los
+                ciclos.*/
+                d++; /*Necesario para determinar si el numero es primo.
+                */
+            } //Termino de la condicion.
+        } //Termino del ciclo.
+        if (d == 2){ //Si el numero es dos.
+            System.out.println("El numero es primo"); /*Indicador de que el numero
+            es primo.*/
+        } else { //Si el numero no es dos.
+            System.out.println("El numero NO es primo"); /*Indicador de que el numero
+            no es primo.*/
+        } // Fin.
+    }
+}
