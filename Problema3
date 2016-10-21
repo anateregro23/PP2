@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema3;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema3 {
+    /**
+     * Calcular factorial de cualquier numero.
+     * @param a es integer y tiene la informacion primordial.
+     * @return  valor procesado.
+     */
+    public static int fac (int a) {
+        int b = 1; //Damos el valor de 1 a f en primera instancia.
+        for (int c = a; c >= 1; c--) { /*El usuario le va a dar un valor a c y
+            este ciclo seguira procesandolo hasta que c deje de tener un valor 
+            menor o igual a uno.*/
+            b = b * c; //Valor de b multiplicado por c.
+        } //Termino.
+    return b;
+    }
+}
