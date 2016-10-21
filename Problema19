@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema19;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema20 {
+    /**
+     * @param a es integer y tiene informacion primordial.
+     */
+    public static void Angulo (int a) {
+        if (a <= 360) { 
+            double b = Math.toRadians(a); 
+            System.out.println("Seno de " + a + "es: " + Math.sin(b));
+            System.out.println("Coseno de " + a + "es: " + Math.cos(b));
+            System.out.println("Tangente de " + a + "es: " + Math.tan(b));
+        } else { 
+            System.out.println("Se excede el limite."); 
+        } 
+    }
+}
