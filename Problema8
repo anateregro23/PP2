@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema8;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema8 {
+    /**
+     * Calcular hipotenusa de un triangulo.
+     * @param cat integer y tiene informacion primordial.
+     * @param cop es integer y tiene informacion primordial.
+     */
+    public static void Hipotenusa (int cat, int cop) {
+        int cat2 = (int) Math.pow(cat,2); /*Se le asigna valor a la variable cat
+        usandola como cateto adyacente.*/
+        int cop2 = (int) Math.pow(cop,2); /*Se le asigna valor a la variable cot
+        usandola como cateto opuesto.*/
+        int p = cat2 + cop2; /*Suma de los cuadrados de los catetos.*/
+        double q = Math.sqrt(p); /*raiz cuadrada de la hipotenusa*/
+        System.out.println("La hipotenusa es: " + q); /*Resultado de la hipotenusa.*/
+    }
+}
