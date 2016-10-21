@@ -1,0 +1,23 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema4;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema4 {
+    /**
+     * Convertor de grados centigrados a fahrenheit.
+     * @param centi es double e incluye informacion primordial.
+     */
+    public static void CentiaFahren (double centi) {
+        double fahren = (centi * 9/5) + 32; /*Asignamos valores y procesamos la 
+        operacion.*/
+        System.out.println(centi + " centi son " + fahren + fahren); /* Plasmar
+        Conversion.*/
+    }
+}
