@@ -1,0 +1,30 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema10;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema10 {
+    /**
+     * @param a es integer y tiene informacion primordial.
+     */
+    public static void Fibonacci (int a) {
+        System.out.println("La serie Fibonacci: "); /*Indicador del nombre de la serie.*/
+        int b = 0, c = 1;
+        System.out.print(b + ", ");
+        for (int i = 2; i <= a; i++) { /*Empieza ciclo hasta llegar al valor necesario.*/
+            b = c + b; /*ASignacion de valores.*/
+            c = b - c; /*Proceso.*/
+            if(i == a) { //Condicional.
+                System.out.print(b + "."); /*maximo.*/
+            } else { //no se llega al tamaño.
+                System.out.print(b + ", "); /*el ciclo seguira plasmando numeros.*/
+            } //termino de la condicion.
+        }
+    }
+}
