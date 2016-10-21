@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Problema16;
+
+/**
+ *
+ * @author ACER-HP
+ */
+public class Problema16 {
+    /**
+     * @param a es integer y tiene informacion primordial.
+     * @param b es integer y tiene informacion primordial.
+     * @param c es integer y tiene informacion primordial.
+     */
+    public static void probdiesc (int a, int b, int c) {
+        System.out.print("Numero mayor: "); 
+        if (a > b && a > c) { 
+            System.out.println(a); 
+        } else if (b > a && b > c) { 
+            System.out.println(b); 
+        } else if (c > a && c > b) { 
+            System.out.println(c); 
+        } 
+    }
+}
